@@ -1,0 +1,1481 @@
+{
+  "target_path": "benchmarks/fintech_crypto_flutter_app.dart",
+  "scanned_files_count": 5,
+  "execution_time_seconds": 0.0022,
+  "total_detections": 61,
+  "category_counts": {
+    "dart_modern_idiomatic": 7,
+    "flutter_reactive_architecture": 7,
+    "concurrency_async": 4,
+    "creational": 5,
+    "structural": 30,
+    "behavioral": 5,
+    "dart_flutter_security_hazards": 3
+  },
+  "detections": [
+    {
+      "pattern_type": "sealed_class_adt",
+      "category": "dart_modern_idiomatic",
+      "target_name": "WalletState",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 11,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies.",
+      "evidence": [
+        {
+          "rule_name": "DART_SEALED_CLASS",
+          "weight": 0.95,
+          "description": "Class 'WalletState' is declared as a sealed class for exhaustive pattern matching and ADT modeling",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:11:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "sealed_class_adt",
+      "category": "dart_modern_idiomatic",
+      "target_name": "TodosOverviewEvent",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 3,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies.",
+      "evidence": [
+        {
+          "rule_name": "DART_SEALED_CLASS",
+          "weight": 0.95,
+          "description": "Class 'TodosOverviewEvent' is declared as a sealed class for exhaustive pattern matching and ADT modeling",
+          "location": "benchmarks/real_world/todos_overview_event.dart:3:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "pattern_matching_switch",
+      "category": "dart_modern_idiomatic",
+      "target_name": "describeWalletState",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 60,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Dart 3 pattern matching, switch expressions, and structural record destructuring.",
+      "evidence": [
+        {
+          "rule_name": "DART_PATTERN_MATCHING_SWITCH",
+          "weight": 0.92,
+          "description": "Function 'describeWalletState' applies Dart 3 pattern matching switch expression",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:60:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "extension_type_inlined",
+      "category": "dart_modern_idiomatic",
+      "target_name": "CryptoId",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 55,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Zero-cost compile-time type-safe inline wrappers via Dart 3 extension type.",
+      "evidence": [
+        {
+          "rule_name": "DART_EXTENSION_TYPE",
+          "weight": 0.92,
+          "description": "Extension type 'CryptoId' on 'Object' provides zero-cost inlined type safety",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:55:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "enhanced_enum_members",
+      "category": "dart_modern_idiomatic",
+      "target_name": "BlockchainNetwork",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 72,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Enhanced enum declaring explicit fields, getters, constructors, and interface implementations.",
+      "evidence": [
+        {
+          "rule_name": "DART_ENHANCED_ENUM",
+          "weight": 0.9,
+          "description": "Enum 'BlockchainNetwork' is an Enhanced Enum defining 1 fields and 0 methods",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:72:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "mixin_behavior_composition",
+      "category": "dart_modern_idiomatic",
+      "target_name": "DiagnosticLogger",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 85,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Reusable horizontal behavior composition and constrained mixins via 'mixin ... on ...'.",
+      "evidence": [
+        {
+          "rule_name": "DART_MIXIN_COMPOSITION",
+          "weight": 0.92,
+          "description": "Mixin 'DiagnosticLogger' on Object defines reusable horizontal behavior composition",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:85:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "extension_method_sugar",
+      "category": "dart_modern_idiomatic",
+      "target_name": "StringCryptoFormatting",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 92,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Retroactive API extension augmenting third-party or core classes without subclassing.",
+      "evidence": [
+        {
+          "rule_name": "DART_EXTENSION_METHOD",
+          "weight": 0.9,
+          "description": "Extension 'StringCryptoFormatting' on 'String' retroactively augments API functionality",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:92:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "bloc_cubit_state_machine",
+      "category": "flutter_reactive_architecture",
+      "target_name": "TodosOverviewBloc",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_bloc.dart",
+        "line_number": 9,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unidirectional reactive state machine converting events into state streams using Bloc/Cubit.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_BLOC_CUBIT",
+          "weight": 0.95,
+          "description": "Class 'TodosOverviewBloc' implements BLoC/Cubit reactive state machine (extends Bloc<TodosOverviewEvent, TodosOverviewState>)",
+          "location": "benchmarks/real_world/todos_overview_bloc.dart:9:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "riverpod_notifier_di",
+      "category": "flutter_reactive_architecture",
+      "target_name": "Home",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 78,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_RIVERPOD_NOTIFIER",
+          "weight": 0.92,
+          "description": "Class 'Home' implements Riverpod Notifier / Consumer reactive scoping",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:78:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "riverpod_notifier_di",
+      "category": "flutter_reactive_architecture",
+      "target_name": "Toolbar",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 127,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_RIVERPOD_NOTIFIER",
+          "weight": 0.92,
+          "description": "Class 'Toolbar' implements Riverpod Notifier / Consumer reactive scoping",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:127:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "riverpod_notifier_di",
+      "category": "flutter_reactive_architecture",
+      "target_name": "TodoItem",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 231,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_RIVERPOD_NOTIFIER",
+          "weight": 0.92,
+          "description": "Class 'TodoItem' implements Riverpod Notifier / Consumer reactive scoping",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:231:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "riverpod_notifier_di",
+      "category": "flutter_reactive_architecture",
+      "target_name": "RiverpodProvider",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 1,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_RIVERPOD_PROVIDER_DECL",
+          "weight": 0.92,
+          "description": "File declares Riverpod Providers for dependency injection and state management",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:1:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clean_usecase_interactor",
+      "category": "flutter_reactive_architecture",
+      "target_name": "TransferFundsUseCase",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 100,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Single-purpose domain business interactor encapsulating transactional application logic.",
+      "evidence": [
+        {
+          "rule_name": "CLEAN_USECASE_INTERACTOR",
+          "weight": 0.9,
+          "description": "Class 'TransferFundsUseCase' implements Clean Architecture UseCase / Interactor pattern",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:100:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clean_usecase_interactor",
+      "category": "flutter_reactive_architecture",
+      "target_name": "TransferFundsUseCaseImpl",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 104,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Single-purpose domain business interactor encapsulating transactional application logic.",
+      "evidence": [
+        {
+          "rule_name": "CLEAN_USECASE_INTERACTOR",
+          "weight": 0.9,
+          "description": "Class 'TransferFundsUseCaseImpl' implements Clean Architecture UseCase / Interactor pattern",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:104:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "isolate_worker_pool",
+      "category": "concurrency_async",
+      "target_name": "CryptoHashWorker.computeSha256Parallel",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 142,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Heavy CPU background task execution on isolated memory threads via Isolate.spawn() or compute().",
+      "evidence": [
+        {
+          "rule_name": "DART_ISOLATE_CONCURRENCY",
+          "weight": 0.92,
+          "description": "Method 'CryptoHashWorker.computeSha256Parallel' spawns background Isolate task for off-main-thread computation",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:142:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "isolate_worker_pool",
+      "category": "concurrency_async",
+      "target_name": "computeSha256Parallel",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 142,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Heavy CPU background task execution on isolated memory threads via Isolate.spawn() or compute().",
+      "evidence": [
+        {
+          "rule_name": "DART_ISOLATE_CONCURRENCY",
+          "weight": 0.92,
+          "description": "Function 'computeSha256Parallel' spawns background Isolate worker computation",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:142:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "async_stream_pipeline",
+      "category": "concurrency_async",
+      "target_name": "CryptoHashWorker.streamBlockConfirmations",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 150,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Asynchronous event streaming and reactive transformations via Stream<T>, async*, and yield.",
+      "evidence": [
+        {
+          "rule_name": "DART_ASYNC_STREAM_PIPELINE",
+          "weight": 0.92,
+          "description": "Method 'CryptoHashWorker.streamBlockConfirmations' generates or transforms asynchronous event Streams (async*/yield)",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:150:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "async_stream_pipeline",
+      "category": "concurrency_async",
+      "target_name": "streamBlockConfirmations",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 149,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Asynchronous event streaming and reactive transformations via Stream<T>, async*, and yield.",
+      "evidence": [
+        {
+          "rule_name": "DART_ASYNC_STREAM_PIPELINE",
+          "weight": 0.92,
+          "description": "Function 'streamBlockConfirmations' yields asynchronous stream of events",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:149:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "factory_constructor",
+      "category": "creational",
+      "target_name": "WalletSuccess.WalletSuccess.fromJson",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 36,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Factory pattern implementing customized instance instantiation or cached return via factory keyword.",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_FACTORY_CONSTRUCTOR",
+          "weight": 0.92,
+          "description": "Class 'WalletSuccess' defines factory constructor 'WalletSuccess.fromJson' for custom instantiation or caching",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:36:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "factory_constructor",
+      "category": "creational",
+      "target_name": "SystemEnvironmentConfig.SystemEnvironmentConfig.fromMap",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 170,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Factory pattern implementing customized instance instantiation or cached return via factory keyword.",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_FACTORY_CONSTRUCTOR",
+          "weight": 0.92,
+          "description": "Class 'SystemEnvironmentConfig' defines factory constructor 'SystemEnvironmentConfig.fromMap' for custom instantiation or caching",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:170:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "builder_widget_pattern",
+      "category": "creational",
+      "target_name": "CryptoWalletCardWidget.build",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 178,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Builder pattern lazily constructing contextual widget subtrees via (BuildContext, ...) callback builders.",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_BUILDER_WIDGET",
+          "weight": 0.9,
+          "description": "Method 'CryptoWalletCardWidget.build' utilizes Builder pattern for lazy contextual widget construction",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:178:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "prototype_copy_with",
+      "category": "creational",
+      "target_name": "WalletSuccess",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 23,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Prototype pattern cloning immutable models with selective field overwrites via copyWith().",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_PROTOTYPE_COPY_WITH",
+          "weight": 0.92,
+          "description": "Class 'WalletSuccess' implements Prototype copyWith() pattern for immutable record cloning with field updates",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:23:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "prototype_copy_with",
+      "category": "creational",
+      "target_name": "TodosOverviewBloc",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_bloc.dart",
+        "line_number": 9,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Prototype pattern cloning immutable models with selective field overwrites via copyWith().",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_PROTOTYPE_COPY_WITH",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewBloc' implements Prototype copyWith() pattern for immutable record cloning with field updates",
+          "location": "benchmarks/real_world/todos_overview_bloc.dart:9:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "CryptoWalletCardWidget",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 174,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'CryptoWalletCardWidget' (StatelessWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:174:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "DangerousWalletScreen",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 199,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'DangerousWalletScreen' (StatefulWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:199:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "_DangerousWalletScreenState",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 206,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget '_DangerousWalletScreenState' (State<DangerousWalletScreen>) participates in Composite UI Element Tree",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:206:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "MyApp",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 69,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'MyApp' (StatelessWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:69:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "Home",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 78,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'Home' (HookConsumerWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:78:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "Toolbar",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 127,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'Toolbar' (HookConsumerWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:127:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "Title",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 199,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'Title' (StatelessWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:199:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "TodoItem",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 231,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'TodoItem' (HookConsumerWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:231:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "WalletState",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 11,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'WalletState' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:11:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "WalletInitial",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 15,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'WalletInitial' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:15:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "WalletLoading",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 19,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'WalletLoading' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:19:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "WalletSuccess",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 23,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'WalletSuccess' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:23:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "WalletFailure",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 40,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'WalletFailure' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:40:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "CryptoWalletCardWidget",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 174,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'CryptoWalletCardWidget' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:174:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "DangerousWalletScreen",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 199,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'DangerousWalletScreen' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:199:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewEvent",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 3,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewEvent' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:3:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewSubscriptionRequested",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 10,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewSubscriptionRequested' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:10:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewTodoCompletionToggled",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 14,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewTodoCompletionToggled' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:14:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewTodoDeleted",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 27,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewTodoDeleted' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:27:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewUndoDeletionRequested",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 36,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewUndoDeletionRequested' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:36:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewFilterChanged",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 40,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewFilterChanged' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:40:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewToggleAllRequested",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 49,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewToggleAllRequested' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:49:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewClearCompletedRequested",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 53,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewClearCompletedRequested' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:53:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewState",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_state.dart",
+        "line_number": 5,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewState' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_state.dart:5:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "MyApp",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 69,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'MyApp' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:69:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "Home",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 78,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'Home' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:78:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "Toolbar",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 127,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'Toolbar' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:127:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "Title",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 199,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'Title' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:199:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodoItem",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 231,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodoItem' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:231:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "proxy_cached_repository",
+      "category": "structural",
+      "target_name": "CryptoRepositoryProxy",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 120,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Proxy pattern intercepting data requests to transparently serve local cache before remote network fetch.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_PROXY_CACHED_REPO",
+          "weight": 0.9,
+          "description": "Class 'CryptoRepositoryProxy' implements Proxy pattern intercepting calls with local caching before remote fetch",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:120:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "command_intent_action",
+      "category": "behavioral",
+      "target_name": "WalletEvent",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 46,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions).",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_COMMAND_INTENT",
+          "weight": 0.92,
+          "description": "Class 'WalletEvent' encapsulates user intent into Command object (BLoC Event / Redux Action)",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:46:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "command_intent_action",
+      "category": "behavioral",
+      "target_name": "TodosOverviewEvent",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 3,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions).",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_COMMAND_INTENT",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewEvent' encapsulates user intent into Command object (BLoC Event / Redux Action)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:3:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "iterator_sync_generator",
+      "category": "behavioral",
+      "target_name": "CryptoHashWorker.generateNonceSequence",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 157,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Iterator pattern generating lazily computed sequences on demand via sync* and yield.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_ITERATOR_SYNC_GENERATOR",
+          "weight": 0.9,
+          "description": "Method 'CryptoHashWorker.generateNonceSequence' lazily yields sequence elements using sync* and yield",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:157:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "iterator_sync_generator",
+      "category": "behavioral",
+      "target_name": "generateNonceSequence",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 156,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Iterator pattern generating lazily computed sequences on demand via sync* and yield.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_ITERATOR_SYNC_GENERATOR",
+          "weight": 0.9,
+          "description": "Function 'generateNonceSequence' lazily yields items via sync* iterator generator",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:156:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "state_machine_hierarchy",
+      "category": "behavioral",
+      "target_name": "WalletState",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 11,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "State pattern representing distinct lifecycle states as polymorphic subtype instances (Initial, Loading, Success, Failure).",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE_PATTERN_HIERARCHY",
+          "weight": 0.92,
+          "description": "Class 'WalletState' forms the root of a polymorphic finite State Machine hierarchy",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:11:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "async_gap_context_use_hazard",
+      "category": "dart_flutter_security_hazards",
+      "target_name": "_DangerousWalletScreenState.submitTransferDangerous",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 210,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Using BuildContext after an 'await' point without checking 'if (!context.mounted) return', risking crashes on unmounted widgets.",
+      "evidence": [
+        {
+          "rule_name": "HAZARD_ASYNC_GAP_CONTEXT",
+          "weight": 0.95,
+          "description": "Method '_DangerousWalletScreenState.submitTransferDangerous' uses BuildContext after an 'await' point without checking 'if (!context.mounted) return'",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:210:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unclosed_stream_controller_hazard",
+      "category": "dart_flutter_security_hazards",
+      "target_name": "_DangerousWalletScreenState",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 206,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "StreamController instantiated in StatefulWidget or Service without corresponding close() in dispose(), leaking memory.",
+      "evidence": [
+        {
+          "rule_name": "HAZARD_UNCLOSED_STREAM_CONTROLLER",
+          "weight": 0.9,
+          "description": "Class '_DangerousWalletScreenState' instantiates StreamController but does not guarantee close() in dispose(), risking memory leak",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:206:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "late_initialization_race_hazard",
+      "category": "dart_flutter_security_hazards",
+      "target_name": "_DangerousWalletScreenState.uninitializedWalletKey",
+      "location": {
+        "file_path": "benchmarks/fintech_crypto_flutter_app.dart",
+        "line_number": 208,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.88,
+        "percentage": 88,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Late field accessed without guaranteed preceding assignment, risking runtime LateInitializationError.",
+      "evidence": [
+        {
+          "rule_name": "HAZARD_UNINITIALIZED_LATE_FIELD",
+          "weight": 0.88,
+          "description": "Field '_DangerousWalletScreenState.uninitializedWalletKey' is declared 'late' without default value, risking LateInitializationError",
+          "location": "benchmarks/fintech_crypto_flutter_app.dart:208:1"
+        }
+      ]
+    }
+  ]
+}

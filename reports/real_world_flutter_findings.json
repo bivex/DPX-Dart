@@ -1,0 +1,663 @@
+{
+  "target_path": "benchmarks/real_world/todos_overview_bloc.dart",
+  "scanned_files_count": 4,
+  "execution_time_seconds": 0.0017,
+  "total_detections": 27,
+  "category_counts": {
+    "dart_modern_idiomatic": 1,
+    "flutter_reactive_architecture": 5,
+    "creational": 1,
+    "structural": 19,
+    "behavioral": 1
+  },
+  "detections": [
+    {
+      "pattern_type": "sealed_class_adt",
+      "category": "dart_modern_idiomatic",
+      "target_name": "TodosOverviewEvent",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 3,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies.",
+      "evidence": [
+        {
+          "rule_name": "DART_SEALED_CLASS",
+          "weight": 0.95,
+          "description": "Class 'TodosOverviewEvent' is declared as a sealed class for exhaustive pattern matching and ADT modeling",
+          "location": "benchmarks/real_world/todos_overview_event.dart:3:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "bloc_cubit_state_machine",
+      "category": "flutter_reactive_architecture",
+      "target_name": "TodosOverviewBloc",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_bloc.dart",
+        "line_number": 9,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unidirectional reactive state machine converting events into state streams using Bloc/Cubit.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_BLOC_CUBIT",
+          "weight": 0.95,
+          "description": "Class 'TodosOverviewBloc' implements BLoC/Cubit reactive state machine (extends Bloc<TodosOverviewEvent, TodosOverviewState>)",
+          "location": "benchmarks/real_world/todos_overview_bloc.dart:9:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "riverpod_notifier_di",
+      "category": "flutter_reactive_architecture",
+      "target_name": "Home",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 78,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_RIVERPOD_NOTIFIER",
+          "weight": 0.92,
+          "description": "Class 'Home' implements Riverpod Notifier / Consumer reactive scoping",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:78:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "riverpod_notifier_di",
+      "category": "flutter_reactive_architecture",
+      "target_name": "Toolbar",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 127,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_RIVERPOD_NOTIFIER",
+          "weight": 0.92,
+          "description": "Class 'Toolbar' implements Riverpod Notifier / Consumer reactive scoping",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:127:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "riverpod_notifier_di",
+      "category": "flutter_reactive_architecture",
+      "target_name": "TodoItem",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 231,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_RIVERPOD_NOTIFIER",
+          "weight": 0.92,
+          "description": "Class 'TodoItem' implements Riverpod Notifier / Consumer reactive scoping",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:231:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "riverpod_notifier_di",
+      "category": "flutter_reactive_architecture",
+      "target_name": "RiverpodProvider",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 1,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers.",
+      "evidence": [
+        {
+          "rule_name": "FLUTTER_RIVERPOD_PROVIDER_DECL",
+          "weight": 0.92,
+          "description": "File declares Riverpod Providers for dependency injection and state management",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:1:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "prototype_copy_with",
+      "category": "creational",
+      "target_name": "TodosOverviewBloc",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_bloc.dart",
+        "line_number": 9,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Prototype pattern cloning immutable models with selective field overwrites via copyWith().",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_PROTOTYPE_COPY_WITH",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewBloc' implements Prototype copyWith() pattern for immutable record cloning with field updates",
+          "location": "benchmarks/real_world/todos_overview_bloc.dart:9:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "MyApp",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 69,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'MyApp' (StatelessWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:69:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "Home",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 78,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'Home' (HookConsumerWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:78:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "Toolbar",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 127,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'Toolbar' (HookConsumerWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:127:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "Title",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 199,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'Title' (StatelessWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:199:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "composite_widget_tree",
+      "category": "structural",
+      "target_name": "TodoItem",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 231,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE_WIDGET",
+          "weight": 0.95,
+          "description": "Widget 'TodoItem' (HookConsumerWidget) participates in Composite UI Element Tree",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:231:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewEvent",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 3,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewEvent' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:3:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewSubscriptionRequested",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 10,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewSubscriptionRequested' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:10:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewTodoCompletionToggled",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 14,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewTodoCompletionToggled' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:14:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewTodoDeleted",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 27,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewTodoDeleted' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:27:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewUndoDeletionRequested",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 36,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewUndoDeletionRequested' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:36:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewFilterChanged",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 40,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewFilterChanged' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:40:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewToggleAllRequested",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 49,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewToggleAllRequested' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:49:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewClearCompletedRequested",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 53,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewClearCompletedRequested' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:53:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodosOverviewState",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_state.dart",
+        "line_number": 5,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewState' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/todos_overview_state.dart:5:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "MyApp",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 69,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'MyApp' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:69:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "Home",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 78,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'Home' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:78:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "Toolbar",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 127,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'Toolbar' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:127:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "Title",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 199,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'Title' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:199:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "flyweight_const_instance",
+      "category": "structural",
+      "target_name": "TodoItem",
+      "location": {
+        "file_path": "benchmarks/real_world/riverpod_todos_app.dart",
+        "line_number": 231,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT_CONST_CTOR",
+          "weight": 0.92,
+          "description": "Class 'TodoItem' defines const constructor for canonical memory deduplication (Flyweight pattern)",
+          "location": "benchmarks/real_world/riverpod_todos_app.dart:231:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "command_intent_action",
+      "category": "behavioral",
+      "target_name": "TodosOverviewEvent",
+      "location": {
+        "file_path": "benchmarks/real_world/todos_overview_event.dart",
+        "line_number": 3,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions).",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_COMMAND_INTENT",
+          "weight": 0.92,
+          "description": "Class 'TodosOverviewEvent' encapsulates user intent into Command object (BLoC Event / Redux Action)",
+          "location": "benchmarks/real_world/todos_overview_event.dart:3:1"
+        }
+      ]
+    }
+  ]
+}

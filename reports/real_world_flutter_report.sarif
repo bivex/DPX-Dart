@@ -1,0 +1,684 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "DPX-Dart",
+          "version": "0.1.0",
+          "informationUri": "https://github.com/bivex/DPX-Dart",
+          "rules": [
+            {
+              "id": "DPX-DART-SEALED_CLASS_ADT",
+              "name": "SEALED_CLASS_ADT",
+              "shortDescription": {
+                "text": "Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies."
+              },
+              "fullDescription": {
+                "text": "Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies."
+              },
+              "properties": {
+                "category": "dart_modern_idiomatic",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-BLOC_CUBIT_STATE_MACHINE",
+              "name": "BLOC_CUBIT_STATE_MACHINE",
+              "shortDescription": {
+                "text": "Unidirectional reactive state machine converting events into state streams using Bloc/Cubit."
+              },
+              "fullDescription": {
+                "text": "Unidirectional reactive state machine converting events into state streams using Bloc/Cubit."
+              },
+              "properties": {
+                "category": "flutter_reactive_architecture",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+              "name": "RIVERPOD_NOTIFIER_DI",
+              "shortDescription": {
+                "text": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+              },
+              "fullDescription": {
+                "text": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+              },
+              "properties": {
+                "category": "flutter_reactive_architecture",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-PROTOTYPE_COPY_WITH",
+              "name": "PROTOTYPE_COPY_WITH",
+              "shortDescription": {
+                "text": "Prototype pattern cloning immutable models with selective field overwrites via copyWith()."
+              },
+              "fullDescription": {
+                "text": "Prototype pattern cloning immutable models with selective field overwrites via copyWith()."
+              },
+              "properties": {
+                "category": "creational",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-COMPOSITE_WIDGET_TREE",
+              "name": "COMPOSITE_WIDGET_TREE",
+              "shortDescription": {
+                "text": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+              },
+              "fullDescription": {
+                "text": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+              },
+              "properties": {
+                "category": "structural",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+              "name": "FLYWEIGHT_CONST_INSTANCE",
+              "shortDescription": {
+                "text": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+              },
+              "fullDescription": {
+                "text": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+              },
+              "properties": {
+                "category": "structural",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-COMMAND_INTENT_ACTION",
+              "name": "COMMAND_INTENT_ACTION",
+              "shortDescription": {
+                "text": "Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions)."
+              },
+              "fullDescription": {
+                "text": "Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions)."
+              },
+              "properties": {
+                "category": "behavioral",
+                "confidence": "VERY_HIGH"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "DPX-DART-SEALED_CLASS_ADT",
+          "ruleIndex": 0,
+          "level": "note",
+          "message": {
+            "text": "[sealed_class_adt] detected on 'TodosOverviewEvent': Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-BLOC_CUBIT_STATE_MACHINE",
+          "ruleIndex": 1,
+          "level": "note",
+          "message": {
+            "text": "[bloc_cubit_state_machine] detected on 'TodosOverviewBloc': Unidirectional reactive state machine converting events into state streams using Bloc/Cubit."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_bloc.dart"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+          "ruleIndex": 2,
+          "level": "note",
+          "message": {
+            "text": "[riverpod_notifier_di] detected on 'Home': Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+          "ruleIndex": 2,
+          "level": "note",
+          "message": {
+            "text": "[riverpod_notifier_di] detected on 'Toolbar': Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+          "ruleIndex": 2,
+          "level": "note",
+          "message": {
+            "text": "[riverpod_notifier_di] detected on 'TodoItem': Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+          "ruleIndex": 2,
+          "level": "note",
+          "message": {
+            "text": "[riverpod_notifier_di] detected on 'RiverpodProvider': Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-PROTOTYPE_COPY_WITH",
+          "ruleIndex": 3,
+          "level": "note",
+          "message": {
+            "text": "[prototype_copy_with] detected on 'TodosOverviewBloc': Prototype pattern cloning immutable models with selective field overwrites via copyWith()."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_bloc.dart"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 4,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'MyApp': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 4,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'Home': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 4,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'Toolbar': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 4,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'Title': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 4,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'TodoItem': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewEvent': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewSubscriptionRequested': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewTodoCompletionToggled': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewTodoDeleted': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewUndoDeletionRequested': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewFilterChanged': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewToggleAllRequested': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewClearCompletedRequested': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewState': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_state.dart"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'MyApp': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'Home': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'Toolbar': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'Title': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodoItem': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMMAND_INTENT_ACTION",
+          "ruleIndex": 6,
+          "level": "note",
+          "message": {
+            "text": "[command_intent_action] detected on 'TodosOverviewEvent': Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

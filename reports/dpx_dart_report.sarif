@@ -1,0 +1,1622 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "DPX-Dart",
+          "version": "0.1.0",
+          "informationUri": "https://github.com/bivex/DPX-Dart",
+          "rules": [
+            {
+              "id": "DPX-DART-SEALED_CLASS_ADT",
+              "name": "SEALED_CLASS_ADT",
+              "shortDescription": {
+                "text": "Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies."
+              },
+              "fullDescription": {
+                "text": "Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies."
+              },
+              "properties": {
+                "category": "dart_modern_idiomatic",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-PATTERN_MATCHING_SWITCH",
+              "name": "PATTERN_MATCHING_SWITCH",
+              "shortDescription": {
+                "text": "Dart 3 pattern matching, switch expressions, and structural record destructuring."
+              },
+              "fullDescription": {
+                "text": "Dart 3 pattern matching, switch expressions, and structural record destructuring."
+              },
+              "properties": {
+                "category": "dart_modern_idiomatic",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-EXTENSION_TYPE_INLINED",
+              "name": "EXTENSION_TYPE_INLINED",
+              "shortDescription": {
+                "text": "Zero-cost compile-time type-safe inline wrappers via Dart 3 extension type."
+              },
+              "fullDescription": {
+                "text": "Zero-cost compile-time type-safe inline wrappers via Dart 3 extension type."
+              },
+              "properties": {
+                "category": "dart_modern_idiomatic",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-ENHANCED_ENUM_MEMBERS",
+              "name": "ENHANCED_ENUM_MEMBERS",
+              "shortDescription": {
+                "text": "Enhanced enum declaring explicit fields, getters, constructors, and interface implementations."
+              },
+              "fullDescription": {
+                "text": "Enhanced enum declaring explicit fields, getters, constructors, and interface implementations."
+              },
+              "properties": {
+                "category": "dart_modern_idiomatic",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-MIXIN_BEHAVIOR_COMPOSITION",
+              "name": "MIXIN_BEHAVIOR_COMPOSITION",
+              "shortDescription": {
+                "text": "Reusable horizontal behavior composition and constrained mixins via 'mixin ... on ...'."
+              },
+              "fullDescription": {
+                "text": "Reusable horizontal behavior composition and constrained mixins via 'mixin ... on ...'."
+              },
+              "properties": {
+                "category": "dart_modern_idiomatic",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-EXTENSION_METHOD_SUGAR",
+              "name": "EXTENSION_METHOD_SUGAR",
+              "shortDescription": {
+                "text": "Retroactive API extension augmenting third-party or core classes without subclassing."
+              },
+              "fullDescription": {
+                "text": "Retroactive API extension augmenting third-party or core classes without subclassing."
+              },
+              "properties": {
+                "category": "dart_modern_idiomatic",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-BLOC_CUBIT_STATE_MACHINE",
+              "name": "BLOC_CUBIT_STATE_MACHINE",
+              "shortDescription": {
+                "text": "Unidirectional reactive state machine converting events into state streams using Bloc/Cubit."
+              },
+              "fullDescription": {
+                "text": "Unidirectional reactive state machine converting events into state streams using Bloc/Cubit."
+              },
+              "properties": {
+                "category": "flutter_reactive_architecture",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+              "name": "RIVERPOD_NOTIFIER_DI",
+              "shortDescription": {
+                "text": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+              },
+              "fullDescription": {
+                "text": "Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+              },
+              "properties": {
+                "category": "flutter_reactive_architecture",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-CLEAN_USECASE_INTERACTOR",
+              "name": "CLEAN_USECASE_INTERACTOR",
+              "shortDescription": {
+                "text": "Single-purpose domain business interactor encapsulating transactional application logic."
+              },
+              "fullDescription": {
+                "text": "Single-purpose domain business interactor encapsulating transactional application logic."
+              },
+              "properties": {
+                "category": "flutter_reactive_architecture",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-ISOLATE_WORKER_POOL",
+              "name": "ISOLATE_WORKER_POOL",
+              "shortDescription": {
+                "text": "Heavy CPU background task execution on isolated memory threads via Isolate.spawn() or compute()."
+              },
+              "fullDescription": {
+                "text": "Heavy CPU background task execution on isolated memory threads via Isolate.spawn() or compute()."
+              },
+              "properties": {
+                "category": "concurrency_async",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-ASYNC_STREAM_PIPELINE",
+              "name": "ASYNC_STREAM_PIPELINE",
+              "shortDescription": {
+                "text": "Asynchronous event streaming and reactive transformations via Stream<T>, async*, and yield."
+              },
+              "fullDescription": {
+                "text": "Asynchronous event streaming and reactive transformations via Stream<T>, async*, and yield."
+              },
+              "properties": {
+                "category": "concurrency_async",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-FACTORY_CONSTRUCTOR",
+              "name": "FACTORY_CONSTRUCTOR",
+              "shortDescription": {
+                "text": "Factory pattern implementing customized instance instantiation or cached return via factory keyword."
+              },
+              "fullDescription": {
+                "text": "Factory pattern implementing customized instance instantiation or cached return via factory keyword."
+              },
+              "properties": {
+                "category": "creational",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-BUILDER_WIDGET_PATTERN",
+              "name": "BUILDER_WIDGET_PATTERN",
+              "shortDescription": {
+                "text": "Builder pattern lazily constructing contextual widget subtrees via (BuildContext, ...) callback builders."
+              },
+              "fullDescription": {
+                "text": "Builder pattern lazily constructing contextual widget subtrees via (BuildContext, ...) callback builders."
+              },
+              "properties": {
+                "category": "creational",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-PROTOTYPE_COPY_WITH",
+              "name": "PROTOTYPE_COPY_WITH",
+              "shortDescription": {
+                "text": "Prototype pattern cloning immutable models with selective field overwrites via copyWith()."
+              },
+              "fullDescription": {
+                "text": "Prototype pattern cloning immutable models with selective field overwrites via copyWith()."
+              },
+              "properties": {
+                "category": "creational",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-COMPOSITE_WIDGET_TREE",
+              "name": "COMPOSITE_WIDGET_TREE",
+              "shortDescription": {
+                "text": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+              },
+              "fullDescription": {
+                "text": "Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+              },
+              "properties": {
+                "category": "structural",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+              "name": "FLYWEIGHT_CONST_INSTANCE",
+              "shortDescription": {
+                "text": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+              },
+              "fullDescription": {
+                "text": "Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+              },
+              "properties": {
+                "category": "structural",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-PROXY_CACHED_REPOSITORY",
+              "name": "PROXY_CACHED_REPOSITORY",
+              "shortDescription": {
+                "text": "Proxy pattern intercepting data requests to transparently serve local cache before remote network fetch."
+              },
+              "fullDescription": {
+                "text": "Proxy pattern intercepting data requests to transparently serve local cache before remote network fetch."
+              },
+              "properties": {
+                "category": "structural",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-COMMAND_INTENT_ACTION",
+              "name": "COMMAND_INTENT_ACTION",
+              "shortDescription": {
+                "text": "Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions)."
+              },
+              "fullDescription": {
+                "text": "Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions)."
+              },
+              "properties": {
+                "category": "behavioral",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-ITERATOR_SYNC_GENERATOR",
+              "name": "ITERATOR_SYNC_GENERATOR",
+              "shortDescription": {
+                "text": "Iterator pattern generating lazily computed sequences on demand via sync* and yield."
+              },
+              "fullDescription": {
+                "text": "Iterator pattern generating lazily computed sequences on demand via sync* and yield."
+              },
+              "properties": {
+                "category": "behavioral",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-STATE_MACHINE_HIERARCHY",
+              "name": "STATE_MACHINE_HIERARCHY",
+              "shortDescription": {
+                "text": "State pattern representing distinct lifecycle states as polymorphic subtype instances (Initial, Loading, Success, Failure)."
+              },
+              "fullDescription": {
+                "text": "State pattern representing distinct lifecycle states as polymorphic subtype instances (Initial, Loading, Success, Failure)."
+              },
+              "properties": {
+                "category": "behavioral",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-ASYNC_GAP_CONTEXT_USE_HAZARD",
+              "name": "ASYNC_GAP_CONTEXT_USE_HAZARD",
+              "shortDescription": {
+                "text": "Using BuildContext after an 'await' point without checking 'if (!context.mounted) return', risking crashes on unmounted widgets."
+              },
+              "fullDescription": {
+                "text": "Using BuildContext after an 'await' point without checking 'if (!context.mounted) return', risking crashes on unmounted widgets."
+              },
+              "properties": {
+                "category": "dart_flutter_security_hazards",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-UNCLOSED_STREAM_CONTROLLER_HAZARD",
+              "name": "UNCLOSED_STREAM_CONTROLLER_HAZARD",
+              "shortDescription": {
+                "text": "StreamController instantiated in StatefulWidget or Service without corresponding close() in dispose(), leaking memory."
+              },
+              "fullDescription": {
+                "text": "StreamController instantiated in StatefulWidget or Service without corresponding close() in dispose(), leaking memory."
+              },
+              "properties": {
+                "category": "dart_flutter_security_hazards",
+                "confidence": "VERY_HIGH"
+              }
+            },
+            {
+              "id": "DPX-DART-LATE_INITIALIZATION_RACE_HAZARD",
+              "name": "LATE_INITIALIZATION_RACE_HAZARD",
+              "shortDescription": {
+                "text": "Late field accessed without guaranteed preceding assignment, risking runtime LateInitializationError."
+              },
+              "fullDescription": {
+                "text": "Late field accessed without guaranteed preceding assignment, risking runtime LateInitializationError."
+              },
+              "properties": {
+                "category": "dart_flutter_security_hazards",
+                "confidence": "VERY_HIGH"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "DPX-DART-SEALED_CLASS_ADT",
+          "ruleIndex": 0,
+          "level": "note",
+          "message": {
+            "text": "[sealed_class_adt] detected on 'WalletState': Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-SEALED_CLASS_ADT",
+          "ruleIndex": 0,
+          "level": "note",
+          "message": {
+            "text": "[sealed_class_adt] detected on 'TodosOverviewEvent': Exhaustive Algebraic Data Types and pattern matching via Dart 3 sealed class hierarchies."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-PATTERN_MATCHING_SWITCH",
+          "ruleIndex": 1,
+          "level": "note",
+          "message": {
+            "text": "[pattern_matching_switch] detected on 'describeWalletState': Dart 3 pattern matching, switch expressions, and structural record destructuring."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-EXTENSION_TYPE_INLINED",
+          "ruleIndex": 2,
+          "level": "note",
+          "message": {
+            "text": "[extension_type_inlined] detected on 'CryptoId': Zero-cost compile-time type-safe inline wrappers via Dart 3 extension type."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-ENHANCED_ENUM_MEMBERS",
+          "ruleIndex": 3,
+          "level": "note",
+          "message": {
+            "text": "[enhanced_enum_members] detected on 'BlockchainNetwork': Enhanced enum declaring explicit fields, getters, constructors, and interface implementations."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-MIXIN_BEHAVIOR_COMPOSITION",
+          "ruleIndex": 4,
+          "level": "note",
+          "message": {
+            "text": "[mixin_behavior_composition] detected on 'DiagnosticLogger': Reusable horizontal behavior composition and constrained mixins via 'mixin ... on ...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-EXTENSION_METHOD_SUGAR",
+          "ruleIndex": 5,
+          "level": "note",
+          "message": {
+            "text": "[extension_method_sugar] detected on 'StringCryptoFormatting': Retroactive API extension augmenting third-party or core classes without subclassing."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-BLOC_CUBIT_STATE_MACHINE",
+          "ruleIndex": 6,
+          "level": "note",
+          "message": {
+            "text": "[bloc_cubit_state_machine] detected on 'TodosOverviewBloc': Unidirectional reactive state machine converting events into state streams using Bloc/Cubit."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_bloc.dart"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+          "ruleIndex": 7,
+          "level": "note",
+          "message": {
+            "text": "[riverpod_notifier_di] detected on 'Home': Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+          "ruleIndex": 7,
+          "level": "note",
+          "message": {
+            "text": "[riverpod_notifier_di] detected on 'Toolbar': Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+          "ruleIndex": 7,
+          "level": "note",
+          "message": {
+            "text": "[riverpod_notifier_di] detected on 'TodoItem': Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-RIVERPOD_NOTIFIER_DI",
+          "ruleIndex": 7,
+          "level": "note",
+          "message": {
+            "text": "[riverpod_notifier_di] detected on 'RiverpodProvider': Compile-time safe dependency injection and reactive state scoping via Riverpod Providers."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-CLEAN_USECASE_INTERACTOR",
+          "ruleIndex": 8,
+          "level": "note",
+          "message": {
+            "text": "[clean_usecase_interactor] detected on 'TransferFundsUseCase': Single-purpose domain business interactor encapsulating transactional application logic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-CLEAN_USECASE_INTERACTOR",
+          "ruleIndex": 8,
+          "level": "note",
+          "message": {
+            "text": "[clean_usecase_interactor] detected on 'TransferFundsUseCaseImpl': Single-purpose domain business interactor encapsulating transactional application logic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-ISOLATE_WORKER_POOL",
+          "ruleIndex": 9,
+          "level": "note",
+          "message": {
+            "text": "[isolate_worker_pool] detected on 'CryptoHashWorker.computeSha256Parallel': Heavy CPU background task execution on isolated memory threads via Isolate.spawn() or compute()."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-ISOLATE_WORKER_POOL",
+          "ruleIndex": 9,
+          "level": "note",
+          "message": {
+            "text": "[isolate_worker_pool] detected on 'computeSha256Parallel': Heavy CPU background task execution on isolated memory threads via Isolate.spawn() or compute()."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-ASYNC_STREAM_PIPELINE",
+          "ruleIndex": 10,
+          "level": "note",
+          "message": {
+            "text": "[async_stream_pipeline] detected on 'CryptoHashWorker.streamBlockConfirmations': Asynchronous event streaming and reactive transformations via Stream<T>, async*, and yield."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 150,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-ASYNC_STREAM_PIPELINE",
+          "ruleIndex": 10,
+          "level": "note",
+          "message": {
+            "text": "[async_stream_pipeline] detected on 'streamBlockConfirmations': Asynchronous event streaming and reactive transformations via Stream<T>, async*, and yield."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FACTORY_CONSTRUCTOR",
+          "ruleIndex": 11,
+          "level": "note",
+          "message": {
+            "text": "[factory_constructor] detected on 'WalletSuccess.WalletSuccess.fromJson': Factory pattern implementing customized instance instantiation or cached return via factory keyword."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FACTORY_CONSTRUCTOR",
+          "ruleIndex": 11,
+          "level": "note",
+          "message": {
+            "text": "[factory_constructor] detected on 'SystemEnvironmentConfig.SystemEnvironmentConfig.fromMap': Factory pattern implementing customized instance instantiation or cached return via factory keyword."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-BUILDER_WIDGET_PATTERN",
+          "ruleIndex": 12,
+          "level": "note",
+          "message": {
+            "text": "[builder_widget_pattern] detected on 'CryptoWalletCardWidget.build': Builder pattern lazily constructing contextual widget subtrees via (BuildContext, ...) callback builders."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-PROTOTYPE_COPY_WITH",
+          "ruleIndex": 13,
+          "level": "note",
+          "message": {
+            "text": "[prototype_copy_with] detected on 'WalletSuccess': Prototype pattern cloning immutable models with selective field overwrites via copyWith()."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-PROTOTYPE_COPY_WITH",
+          "ruleIndex": 13,
+          "level": "note",
+          "message": {
+            "text": "[prototype_copy_with] detected on 'TodosOverviewBloc': Prototype pattern cloning immutable models with selective field overwrites via copyWith()."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_bloc.dart"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'CryptoWalletCardWidget': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'DangerousWalletScreen': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on '_DangerousWalletScreenState': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 206,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'MyApp': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'Home': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'Toolbar': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'Title': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMPOSITE_WIDGET_TREE",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "[composite_widget_tree] detected on 'TodoItem': Composite pattern structuring hierarchical UI elements where containers treat leaf widgets uniformly."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'WalletState': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'WalletInitial': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'WalletLoading': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'WalletSuccess': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'WalletFailure': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'CryptoWalletCardWidget': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'DangerousWalletScreen': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewEvent': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewSubscriptionRequested': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewTodoCompletionToggled': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewTodoDeleted': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewUndoDeletionRequested': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewFilterChanged': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewToggleAllRequested': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewClearCompletedRequested': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodosOverviewState': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_state.dart"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'MyApp': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'Home': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'Toolbar': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'Title': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-FLYWEIGHT_CONST_INSTANCE",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "[flyweight_const_instance] detected on 'TodoItem': Flyweight pattern deduplicating identical immutable objects into canonical memory addresses via const constructor."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/riverpod_todos_app.dart"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-PROXY_CACHED_REPOSITORY",
+          "ruleIndex": 16,
+          "level": "note",
+          "message": {
+            "text": "[proxy_cached_repository] detected on 'CryptoRepositoryProxy': Proxy pattern intercepting data requests to transparently serve local cache before remote network fetch."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMMAND_INTENT_ACTION",
+          "ruleIndex": 17,
+          "level": "note",
+          "message": {
+            "text": "[command_intent_action] detected on 'WalletEvent': Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-COMMAND_INTENT_ACTION",
+          "ruleIndex": 17,
+          "level": "note",
+          "message": {
+            "text": "[command_intent_action] detected on 'TodosOverviewEvent': Command pattern encapsulating user intents into standalone command objects (BLoC Events / Redux Actions)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/todos_overview_event.dart"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-ITERATOR_SYNC_GENERATOR",
+          "ruleIndex": 18,
+          "level": "note",
+          "message": {
+            "text": "[iterator_sync_generator] detected on 'CryptoHashWorker.generateNonceSequence': Iterator pattern generating lazily computed sequences on demand via sync* and yield."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-ITERATOR_SYNC_GENERATOR",
+          "ruleIndex": 18,
+          "level": "note",
+          "message": {
+            "text": "[iterator_sync_generator] detected on 'generateNonceSequence': Iterator pattern generating lazily computed sequences on demand via sync* and yield."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-STATE_MACHINE_HIERARCHY",
+          "ruleIndex": 19,
+          "level": "note",
+          "message": {
+            "text": "[state_machine_hierarchy] detected on 'WalletState': State pattern representing distinct lifecycle states as polymorphic subtype instances (Initial, Loading, Success, Failure)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-ASYNC_GAP_CONTEXT_USE_HAZARD",
+          "ruleIndex": 20,
+          "level": "error",
+          "message": {
+            "text": "[async_gap_context_use_hazard] detected on '_DangerousWalletScreenState.submitTransferDangerous': Using BuildContext after an 'await' point without checking 'if (!context.mounted) return', risking crashes on unmounted widgets."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 210,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-UNCLOSED_STREAM_CONTROLLER_HAZARD",
+          "ruleIndex": 21,
+          "level": "error",
+          "message": {
+            "text": "[unclosed_stream_controller_hazard] detected on '_DangerousWalletScreenState': StreamController instantiated in StatefulWidget or Service without corresponding close() in dispose(), leaking memory."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 206,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DPX-DART-LATE_INITIALIZATION_RACE_HAZARD",
+          "ruleIndex": 22,
+          "level": "error",
+          "message": {
+            "text": "[late_initialization_race_hazard] detected on '_DangerousWalletScreenState.uninitializedWalletKey': Late field accessed without guaranteed preceding assignment, risking runtime LateInitializationError."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/fintech_crypto_flutter_app.dart"
+                },
+                "region": {
+                  "startLine": 208,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
