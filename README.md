@@ -164,8 +164,6 @@ dpx-dart catalog
 | 27 | **Yul** | [`bivex/DPX-Yul`](https://github.com/bivex/DPX-Yul) | EVM Intermediate Representation Optimization |
 | 28 | **Zig** | [`bivex/DPX-Zig`](https://github.com/bivex/DPX-Zig) | Comptime, Manual Memory Allocators, C ABI |
 
----
-
 ## 📄 License
 
 MIT License © 2026 Bivex
